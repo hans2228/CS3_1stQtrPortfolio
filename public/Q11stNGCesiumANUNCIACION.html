@@ -1,9 +1,9 @@
 <script>
-    const age = 1;
-    var maxAge = 100
-    var numPerDay = 1;
+    const age = window.prompt("How old are you? (in years)", "0");
+    var maxAge = window.prompt("What is the maximum age you expect to reach (in years)", "100")
+    var numPerDay = window.prompt("How many oreos do you eat per day?", "0");
 
-    const totalRequired = (numPerDay * 365) * (maxAge - age)
+    var totalRequired = (numPerDay * 365) * (maxAge - age)
 
     document.write(`You will need ${totalRequired} oreos to last you until the ripe old age of ${maxAge}`);
-</script>
+    </script>
